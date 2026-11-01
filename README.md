@@ -1,6 +1,6 @@
 # Mathplatform — Folio by Hicham
 
-Bibliothèque React de mathématiques pour la première bac Lettres et Sciences humaines au Maroc. 120 PDF originaux, 278 pages consultables et leurs sources.
+Bibliothèque React de mathématiques pour la première bac Lettres et Sciences humaines au Maroc. 121 PDF, 284 pages consultables et leurs sources.
 
 ## Lancer
 
@@ -67,3 +67,8 @@ Les rappels par chapitre sont proposés selon les documents terminés ou annoté
 Le lecteur propose un calque canvas de surlignage et dessin, stocké séparément pour chaque page avec annulation du dernier trait. Les notes textuelles restent disponibles.
 
 La progression présente les pourcentages par chapitre et 84 jours d'activité. Le temps de lecture est mesuré lorsque la page est visible et active, puis enregistré à la fermeture du lecteur. Une fermeture forcée du navigateur peut perdre le temps de la session courante. Toutes ces données restent dans le navigateur, sans synchronisation distante.
+
+
+## Série Folio by Hicham
+
+La série 01 « Logique & calcul numérique » contient huit exercices et leurs corrigés, mis au propre à partir des photos du cahier fournies. Six pages A4, identité Folio by Hicham, texte sélectionnable, tables de vérité et tableau de signes. Une consigne quantifiée illisible est explicitement signalée et n’a pas été inventée. Les documents personnalisés sont conservés dans src/custom-documents.json et réintégrés par prepare.py. Les photos privées ne sont pas incorporées au dépôt.

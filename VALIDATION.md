@@ -45,3 +45,8 @@ Contrôle complémentaire à 320 × 780 : pas de débordement horizontal, recher
 Compilation réussie. Index de 278 pages généré depuis les PDF avec PDFium. Vérification de 7 pages pertinentes pour « dérivée » via la correspondance bilingue et des 14 paires sujet/correction. Dans le navigateur : recherche « dérivée » (8 documents dont 4 présentent les pages textuelles correspondantes), ouverture directe de la synthèse à la page 15 ; tirage d'un examen, timer conservé après rechargement, correction présente, score 12/20 enregistré puis résultat de test supprimé. Les huit chapitres du planificateur et les 84 cellules accessibles de la heatmap sont présents. Calque canvas testé par un glisser de pointeur : trait enregistré et annulation activée, puis trait de test annulé.
 
 Limites : aucune OCR, extraction limitée au texte encodé des PDF ; résultats d'examen autoévalués ; SRS à intervalle initial de trois jours puis doublement, sans notification système. Données locales. L'index de texte augmente le JavaScript compilé à environ 970 Ko (249 Ko gzip), avec avertissement de taille Vite.
+
+
+## Série personnalisée — 1 novembre 2026
+
+PDF de six pages créé avec ReportLab, polices mathématiques embarquées et logo transparent. Les six pages rendues ont été inspectées, dont les pages 1 et 4 après les corrections finales. Huit exercices et corrigés ; doublon photographique retiré et une consigne ambiguë exclue avec note éditoriale. Racine −1/2, conditions x≠1, intervalles et tables de vérité revérifiés. Catalogue : 121 documents, 284 pages. Archive ZIP : 121 PDF, contenu du nouveau fichier vérifié identique à l’original. Recherche « Série Hicham » : un résultat ; ouverture et image chargée en page 1 constatées dans le navigateur.

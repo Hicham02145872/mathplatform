@@ -38,6 +38,9 @@ for i in items:
  if not cover.exists():
   doc=pdfium.PdfDocument(path);image=doc[0].render(scale=.65).to_pil();image.thumbnail((420,560));image.save(cover,'WEBP',quality=78)
  results.append(dict(id=ident,title=display,originalTitle=title,subtitle=subtitle,kind=kind,chapter=chapter[0],chapterTitle=chapter[1],symbol=chapter[2],term=term,correction=correction,language='fr' if i['langue']=='français' else 'ar',pages=i['pages'],size=i['octets'],url=f'/documents/{ident}.pdf',cover=f'/covers/{ident}.webp',source=i['page']))
+custom=root/'src/custom-documents.json'
+if custom.exists():
+ results=json.loads(custom.read_text(encoding='utf-8'))+results
 (root/'src'/'documents.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8')
 shutil.copyfile(root.parent/'Maths-1bac-Lettres-PDF.zip',root/'public'/'Maths-1bac-Lettres-PDF.zip')
 print('Prepared',len(results),'documents and thumbnails.')

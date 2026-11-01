@@ -1,5 +1,27 @@
 [
   {
+    "id": "hicham-serie-logique-calcul-01",
+    "title": "Logique & calcul numérique — Série Hicham",
+    "originalTitle": "Série 01 — exercices et corrigés à partir du cahier",
+    "subtitle": "Exercices et corrigés · 8 exercices",
+    "kind": "exercices",
+    "chapter": "logique",
+    "chapterTitle": "Logique & calcul numérique",
+    "symbol": "P ∧ Q",
+    "term": 1,
+    "correction": false,
+    "language": "fr",
+    "pages": 6,
+    "size": 474132,
+    "url": "/documents/hicham-serie-logique-calcul-01.pdf",
+    "cover": "/covers/hicham-serie-logique-calcul-01.webp",
+    "source": "/documents/hicham-serie-logique-calcul-01.pdf",
+    "chapters": [
+      "logique",
+      "calcul"
+    ]
+  },
+  {
     "id": "20667",
     "title": "Programme pédagogique",
     "originalTitle": "البرنامج البيداغوجي",
