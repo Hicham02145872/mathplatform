@@ -41,3 +41,7 @@ for i in items:
 (root/'src'/'documents.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8')
 shutil.copyfile(root.parent/'Maths-1bac-Lettres-PDF.zip',root/'public'/'Maths-1bac-Lettres-PDF.zip')
 print('Prepared',len(results),'documents and thumbnails.')
+
+# Page-level text extraction; scanned/image-only pages need a separate OCR pass.
+import runpy
+runpy.run_path(str(root/"scripts/index-text.py"))["index_documents"](root)

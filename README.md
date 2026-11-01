@@ -54,3 +54,16 @@ Le lecteur affiche des pages rendues en images. Pour sélectionner le texte, rec
 La collection contient principalement des documents en arabe, deux cours en français et une sélection de 14 examens régionaux avec leurs corrigés. Elle n'est pas une archive exhaustive de toutes les années.
 
 Les dépendances locales sont actuellement réutilisées depuis le projet voisin `cadence` via une jonction `node_modules`. Sur une autre machine, utiliser `npm install` pour créer une installation autonome.
+
+
+## Outils de révision
+
+La recherche utilise désormais le texte des 278 pages extrait par `scripts/index-text.py`, appelé également depuis `scripts/prepare.py`. L'ouverture d'un résultat mène au premier passage correspondant. Une correspondance bilingue relie « dérivée » à la racine arabe de l'اشتقاق. Les scans et polices sans texte correctement encodé nécessitent un traitement OCR distinct ; cet index ne prétend pas en effectuer.
+
+L'espace de révision, sous le catalogue, propose un sujet régional aléatoire, un compteur de 90 minutes, sa correction et un score autoévalué sur 20. Résultats et durées sont conservés localement. Le compteur continue lors d'une fermeture puis réouverture de la page.
+
+Les rappels par chapitre sont proposés selon les documents terminés ou annotés : J+3 puis doublement de l'intervalle après validation. Les rappels sont consultables dans l'application, sans notifications système.
+
+Le lecteur propose un calque canvas de surlignage et dessin, stocké séparément pour chaque page avec annulation du dernier trait. Les notes textuelles restent disponibles.
+
+La progression présente les pourcentages par chapitre et 84 jours d'activité. Le temps de lecture est mesuré lorsque la page est visible et active, puis enregistré à la fermeture du lecteur. Une fermeture forcée du navigateur peut perdre le temps de la session courante. Toutes ces données restent dans le navigateur, sans synchronisation distante.
